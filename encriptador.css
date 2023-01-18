@@ -1,0 +1,254 @@
+.caja{
+    width: 1440px;
+    height: 1024px;
+}
+
+
+.logo{
+    position: absolute;
+    left: 84px;
+    right: 1324.91px;
+    top: 40px;
+    bottom: 936px;   
+}
+
+body{
+    background:linear-gradient(turquoise, lightskyblue);
+    width: 100%;
+}
+
+.ingrese-texto{
+    font-weight: 400;
+    font-size: 32px; 
+    color: darkblue;
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    line-height: 150%;
+    border: 2px solid darkblue;   
+}
+
+.cuadro{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    right: 40px;
+    left: 1000px;
+    bottom: 40px;
+    background-image: linear-gradient(lightblue,white);
+}
+
+.cuadro img{
+    position: absolute;
+    right: 31.96px;
+    left: 32.06px;
+    top: 243.17px;
+    bottom: 396.79px;
+    border: 2px solid blue;
+}
+    
+.cuadro h1{
+    width: 336px;
+    height: 58px;
+    position: absolute;
+    top: 579px;
+    left: 32px;
+    right: 32px;
+    line-height: 120%;
+    font-size: 26px;
+    text-align: center;
+    border: 2px solid pink;
+}
+.cuadro textarea{
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    top: 700px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px;
+    text-align: center;
+}
+
+.botoncopiar{
+    position: absolute;
+    top: 850px;
+    left: 30px;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    color: darkblue;
+    border: 2px solid darkblue;
+    font-size: 18px;
+    cursor: pointer;
+    background: lightskyblue;
+    transition: 1s all;
+    display: none;
+}
+
+.botoncopiar:hover{
+    background: lightblue;
+}
+
+.letras-minusculas{
+    font-size: 12px;
+    position: absolute;
+    top: 800px;
+    left: 290px;
+    color: gray;
+}
+
+.vector{
+    position: absolute;
+    display: inline-block;
+    margin: 10px;
+    top: 800px;
+    left: 250px;
+}
+
+.botonencriptado{
+    position: absolute;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    background: darkblue;
+    left: 240px;
+    top: 850px;
+    color: white;
+    font-size: 18px;
+    border-radius: 24px;
+    align-items: center;
+    line-height: 19px;
+    border: 2px solid darkblue;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botonencriptado:hover{
+    background: blue;
+}
+
+.botondesencriptado{
+    position: absolute;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    left: 600px;
+    top: 850px;
+    font-size: 18px;
+    border-radius: 24px;
+    align-items: center;
+    color: darkblue;
+    border: 2px solid darkblue;
+    transition: 1s all;
+    cursor: pointer;
+    background: lightgray;
+}
+
+.botondesencriptado:hover{
+    background: white;
+}
+
+/* formato para pantallas hasta 480px*/
+
+@media screen and (max-width: 480px){
+
+    
+    .logo, .ingrese-texto{
+        left: 16px;
+    }
+
+    .cuadro{
+        align-items: center;
+        width: 390px;
+        height: 250px;
+        top: 700px;
+        left: 100px;
+
+        display: flex;
+        align-items: flex-end;
+    }
+    .cuadro img{
+        display: none;
+    }
+    .cuadro h1{
+        top: 0px;
+        text-align: center;
+    }
+    .cuadro textarea{
+        top: 100px;
+    }
+
+    .letras-minusculas{
+        top: 600px;
+        margin: 15px;
+        left: 100px;
+    }
+    .vector{
+        top: 600px;
+        margin: 5px;
+        left: 50px;
+    }
+    .botonencriptado {
+        display: flex;
+        flex-direction: column;
+        top: 400px;
+        left: 100px;
+    }
+    .botondesencriptado{
+        display: flex;
+        flex-direction: column;
+        top: 500px;
+        left: 100px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .cuadro{
+        width: 800px;
+        height: 300px;
+        top: 700px;
+        left: 100px;
+    }
+    .cuadro h1{
+        text-align: center;
+        width: 650px;
+        top: 0px;
+        left: 32px;
+        
+    }
+    .cuadro textarea{
+        top: 100px;
+    }
+
+    .cuadro img{
+        display: none;
+    }
+    .letras-minusculas{
+        top: 500px;
+        margin: 15px;
+        left: 120px;
+    }
+    .vector{
+        top: 500px;
+        margin: 5px;
+        left: 100px;
+    }
+    .botonencriptado {
+        top: 580px;
+        left: 100px;
+    }
+    .botondesencriptado{
+        top: 580px;
+        left: 470px;
+    }
+}
